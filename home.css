@@ -1,5 +1,4 @@
 
-
 .navbar
 {
 	display : flex;
@@ -16,7 +15,6 @@
 	position : relative;
 	list-style-type:none;
 	
-
 }
 
 
@@ -24,5 +22,13 @@
 {
 	display: flex;
 	padding : 10px;
+	font-family : monaco, menlo, monospace, helvetica;
+	font-weight: bold;
+}
+.navbar  h1
+{
+	font-family : fantasy, menlo, monaco, helvetica;
+	font-size : 5em;
+	margin : 0;
 
 }
