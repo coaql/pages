@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="static/home.css">
+		<script src="static/jquery.js"></script>
+		<script src="static/home.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<div class="navbar ">
+			<h1><a href="#"> McMao </a></h1>
+			<ul class="navops">
+				<li><h3> <a href="#">Dashboard</a> </h3></li>
+				<li><h3> <a href="#">Statements</a> </h3></li>
+				<li><h3> <a href="#">Goals</a> </h3></li>
+				<li><h3> <a href="#">Notes</a> </h3></li>
+				<li><h3> <a href="#">Profile</a> </h3></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="left-panel">
+				<div id="display-stat">
+					<ul>
+
+					</ul>
+				</div>
+			</div>
+			<div class="right-panel" style="display:flex;">
+				<form id="add-stat">
+					<h1>Enter Amount</h1>
+					<input id="Amount" type="number" name="amount" required data-type="currency"/>
+					<h1>Enter Date</h1>
+					<input id="Date" type="date" name="date" required/>
+					<h1>Enter Category</h1>
+					<select id="Category" name="category" required>
+						<option ></option>
+						<option value="personal">Personal</option>
+						<option value="prsonal">Prsonal</option>
+						<option value="other">other</option>
+					</select>
+					<button type="submit"> ADD </button>
+				<form>
+					<div id="output">
+					<div>
+			</div>
+		</div>
+	</body>
+</hmtl>
+
