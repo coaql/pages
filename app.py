@@ -13,5 +13,9 @@ def home():
 def pocket():
     if request.method == 'POST':
         db.execute('INSERT INTO stat (amount, date, category) values (?,?,?)', request.form.get('amount'), request.form.get('date'), request.form.get('category'))
-        return jsonify(db.execute('SELECT * FROM stat'))
-    return jsonify(db.execute('SELECT * FROM stat'))
+        return jsonify(db.execute('SELECT * FROM stat ORDER BY id DESC'))
+    return jsonify(db.execute('SELECT * FROM stat ORDER BY id DESC'))
+
+@app.route('/statement')
+def statement():
+    return render_template("transaction.html")

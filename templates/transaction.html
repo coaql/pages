@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>statements</title>
+    <link rel="stylesheet" href="static/home.css">
+    <link rel="stylesheet" href="static/transaction.css">
+    <script  src="static/jquery.js"></script>
+    <script  src="static/transaction.js"></script>
+  </head>
+  <body>
+	<div class="navbar ">
+		<h1><a href="#"> McMao </a></h1>
+		<ul class="navops">
+			<li><h3> <a href="/">Dashboard</a> </h3></li>
+			<li><h3> <a href="#">Statements</a> </h3></li>
+			<li><h3> <a href="#">Goals</a> </h3></li>
+			<li><h3> <a href="#">Notes</a> </h3></li>
+			<li><h3> <a href="#">Profile</a> </h3></li>
+		</ul>
+	</div>
+    <div class="container">
+
+      <div class="filters">
+
+
+        <div class="filter">  
+	<label for="category">Category:</label>
+	  <select id="category">
+            <option value="">All</option>
+            <option value="food">Food</option>
+            <option value="shopping">Shopping</option>
+            <option value="transportation">Transportation</option>
+            <option value="ENTERTAINTMENT">ENTERTAINTMENT</option>
+            <option value="OTHER">OTHER</option>
+          </select>
+        </div>
+
+
+      <div class="filter">
+          <label style="margin-right: 20px;" for="date-range">Date Range:</label>
+          <input style="margin-right: 30px;" type="date" id="from-date" name="from-date">
+          <label style="margin-right: 30px" for="to-date">to:</label>
+          <input style="margin-right: 30px;" type="date" id="to-date" name="to-date">
+      </div>
+	
+	
+      </div>
+	
+      <div class="table-container">
+        <table>
+          <thead style="color: white;">
+            <tr style="background-color: white;">
+              <th>Date</th>
+              <th>Category</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody style="overflow-y: scroll;">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+          </tbody>
+	</table>
+      </div>
+	
+    </div>
+  </body>
+</html>

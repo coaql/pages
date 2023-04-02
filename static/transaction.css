@@ -1,0 +1,57 @@
+
+.container {
+margin: 20px;
+   border-radius: 20px;
+   width: auto;
+}
+.filters {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+.filter {
+display: flex;
+align-items: center;
+margin-right: 20px;
+}
+.filter label {
+margin-right: 10px;
+font-weight: bold;
+}
+.table-container {
+overflow-x: scroll;
+}
+table {
+border-collapse: collapse;
+overflow: scroll;
+width: 100%;
+text-align: left;
+}
+th,
+td {
+
+      padding: 10px;
+border-bottom: 1px solid #ddd;
+}
+th {
+background-color: #333;
+color: #fff;
+}
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+input 
+{
+	background-color:#E7E9EB;
+	color:black;
+	height:75px;
+	width:100%;
+	font-size:25px;
+	text-align: center;
+	font-family: monospace;
+	padding:0px;
+	border:none;
+	border-radius:25px;
+	box-shadow: 5px 10px teal;
+}

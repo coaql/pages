@@ -1,9 +1,3 @@
-statements={}
-statement = {
-		'amount':'',
-		'date':'',
-		'category':''
-		}
 $(document).ready(function()
 {	$('#add-stat').on('submit',function(e)
 	{	statement.amount = $('#Amount').val();
@@ -13,14 +7,14 @@ $(document).ready(function()
 		$.ajax({ data: statement, type :'POST', url :'/pocket'})
 			.done(function(data)
 			{
-				$('#display-stat > ul')
-					.prepend('<li> you have spent Rs '
-						+ data[0].amount 
-						+ ' on ' 
+				$('tbody')
+					.prepend('<tr><td>'
 						+ data[0].date 
-						+ ' for '
+						+ '</td><td>' 
 						+ data[0].category 
-						+ '</li>'
+						+ '</td><td>'
+						+ data[0].amount 
+						+ '</td></tr>'
 					);
 				
 				//alert(data.length);
@@ -36,9 +30,14 @@ function report()
 		.done(function (data)
 			{
 				for (i in data)
-				$('#display-stat > ul').append('<li> you have spent Rs '+ data[i].amount + ' on ' + data[i].date + ' for '+ data[i].category + '</li>');
-				statements = data;
-				for(i in data)
-				console.log(data[i].amount);
+				$('tbody')
+					.prepend('<tr><td>'
+						+ data[i].date 
+						+ '</td><td>' 
+						+ data[i].category 
+						+ '</td><td>'
+						+ data[i].amount 
+						+ '</td></tr>'
+					);
 			});
 }
